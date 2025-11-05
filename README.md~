@@ -9,25 +9,19 @@ In this project, We propose **Precision-Focused Efficient Design (PFED)**, a res
 
 ## 🌟 Efficiency analysis
 
-**PFED** achieves state-of-the-art performance in both accuracy and efficiency, reaching `97.15% Recall@1` on University-1652 while being over `5x` more efficient in `FLOPs` and `3x faster` than previous top methods. 
-
-Furthermore, PFED runs at `251.5 FPS` on the `AGX Orin` edge device, demonstrating its practical viability for `real-time` UAV applications.
-
-
+PFED achieves state-of-the-art performance in both accuracy and efficiency, reaching 97.15% Recall@1 on University-1652 while being over 5x more efficient in FLOPs and 3x faster than previous top methods. Furthermore, PFED runs at 251.5 FPS on the AGX Orin edge device, demonstrating its practical viability for real-time UAV applications.
+<div align=center>
 <img src="assets/bubble_all.png" width="60%" height="60%" >
-
-We will update this repository for better clarity ASAP, current version is for quick research for researchers interested in the cross-view geo-localization task.
+<div align=left>
 
 ---
 
-## 🏛️ Core Architecture 
+## 🏛️ Core Architecture
 
 The overall architecture of our model `PFED` is illustrated below:
-
-
-<img src="assets/frame_work.png" width="90%" height="90%">
-
-
+<div align=center>
+<img src="assets/frame_work.png" width="80%" height="80%" align="center" >
+<div align=left>
 
 ---
 
@@ -59,19 +53,8 @@ We recommend using `conda` to create a virtual environment.
 
 ## 🚀 Quick Test
 
-We provide the following `.mat` file for quick evaluation of the model's performance.
-[Download link](https://drive.google.com/drive/folders/1mmIp8HotaW0hBTC3zTxYKm1o_1ET8Ity?usp=drive_link)
 
-You can use `Tools/evaluate_norm.py` to evaluate the performance.
-**Please note to replace with your own files path.**
-```bash
-python evaluate_norm.py
-```
-    
-
-    
-
-
+We provide complete scripts for training and evaluation.
 
 ### 1. Training
 
@@ -79,7 +62,7 @@ python evaluate_norm.py
 ## 📜 TODOs
 
 - [x] ~~Release the `requirements.txt`~~
-- [x] ~~Release the `mat file` of the second stage~~
+- [x] Release the weight of the second stage
 - [x] Release the ***evaluation*** code for the second stage
 - [x] Release the **training** code for the second stage
 - [x] Release the weight of the first stage
@@ -94,35 +77,7 @@ python evaluate_norm.py
 
 More detailed file structure:
 
-### University-1652 Dataset Directory Structure
-```
-├── University-1652/
-│   ├── train/
-│       ├── drone/                   /* drone-view training images 
-│           ├── 0001
-|           ├── 0002
-|           ...
-│       ├── satellite/               /* satellite-view training images       
-│   ├── test/
-│       ├── query_drone/  
-│       ├── gallery_drone/  
-│       ├── query_satellite/  
-│       ├── gallery_satellite/ 
-```
-### SUES-200 Dataset Directory Structure
-```
-├─ SUES-200
-  ├── Training
-    ├── 150/
-    ├── 200/
-    ├── 250/
-    └── 300/
-  ├── Testing
-    ├── 150/
-    ├── 200/ 
-    ├── 250/	
-    └── 300/
-```
+
 
 
 
@@ -136,14 +91,14 @@ More detailed file structure:
 
 ## 🤗 Weights
 
-[Download link]()
+[Download link](https://pan.baidu.com/s/1ZjssipR0RGfoPaETo4QhsQ?pwd=ahi4)
 
 
 Choose the weight and **unzip** it. Then put it in the root path in the working directory for your repo.
 
 PS: 
 
-- `model_2024-11-02-03-05-31` is the weight and `model_2024-10-05-02_49_11` is the weight
+- `model_2024-11-02-03-05-31` is the weight for 30-degree UniV (2fps) and `model_2024-10-05-02_49_11` is the weight for 45-degree UniV (2fps)
   - The evaluation number should be the same as our paper
 - By tuning hyper-parameter, we can get a better result.
 
@@ -160,7 +115,7 @@ PS:
 
 ## 🙏 Acknowledgements
 Our implementation references the following excellent open-source projects: 
-[University1652](https://github.com/layumi/University1652-Baseline), [Sample4Geo](https://github.com/Skyy93/Sample4Geo), [MEAN](https://github.com/ISChenawei/MEAN/tree/main).
+[University1652](https://github.com/layumi/University1652-Baseline), [Sample4Geo](https://github.com/Skyy93/Sample4Geo).
 We thank the anonymous reviewers for their insightful feedback.
 
 
@@ -168,8 +123,24 @@ We thank the anonymous reviewers for their insightful feedback.
 
 ## 📄 Citation
 
-If you find this code useful for your research, please cite the following papers.
+The following paper uses and reports the result of the baseline model. You may cite it in your paper.
 
+[//]: # (```bibtex)
+
+[//]: # (@article{ju2024video2bev,)
+
+[//]: # (  title={Video2bev: Transforming drone videos to bevs for video-based geo-localization},)
+
+[//]: # (  author={Ju, Hao and Huang, Shaofei and Liu, Si and Zheng, Zhedong},)
+
+[//]: # (  journal={arXiv preprint arXiv:2411.13610},)
+
+[//]: # (  year={2024})
+
+[//]: # (})
+
+[//]: # (```)
+[//]: # (Others:)
 
 ```bibtex
 @article{zheng2020university,
