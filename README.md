@@ -1,17 +1,17 @@
-# 🌍 [Cross-View UAV Geo-Localization with Precision-Focused Efficient Design: A Hierarchical Distillation Approach with Multi-view Refinement]  
+# 🌍 MobileGeo: Exploring Hierarchical Knowledge Distillation for Resource-Efficient Cross-view Drone Geo-Localization
 
 
-This is the official PyTorch implementation for our paper **"Cross-View UAV Geo-Localization with Precision-Focused Efficient Design: A Hierarchical Distillation Approach with Multi-view Refinement"**.
+This is the official PyTorch implementation for our paper **"MobileGeo: Exploring Hierarchical Knowledge Distillation for Resource-Efficient Cross-view Drone Geo-Localization"**.
 
-In this project, We propose **Precision-Focused Efficient Design (PFED)**, a resource-efficient framework combining hierarchical knowledge transfer and multi-view representation refinement. 🚁
+In this project, We propose **MobileGeo**, a resource-efficient framework combining hierarchical knowledge transfer and multi-view representation refinement. 🚁
 
 ---
 
 ## 🌟 Efficiency analysis
 
-**PFED** achieves state-of-the-art performance in both accuracy and efficiency, reaching `97.15% Recall@1` on University-1652 while being over `5x` more efficient in `FLOPs` and `3x faster` than previous top methods. 
+**MobileGeo** achieves state-of-the-art performance in both accuracy and efficiency, reaching `97.15% Recall@1` on University-1652 while being over `5x` more efficient in `FLOPs` and `3x faster` than previous top methods. 
 
-Furthermore, PFED runs at `251.5 FPS` on the `AGX Orin` edge device, demonstrating its practical viability for `real-time` UAV applications.
+Furthermore, MobileGeo runs at `251.5 FPS` on the `AGX Orin` edge device, demonstrating its practical viability for `real-time` UAV applications.
 
 
 <img src="assets/bubble_all.png" width="60%" height="60%" >
@@ -39,7 +39,7 @@ We recommend using `conda` to create a virtual environment.
     ```bash
     git clone https://github.com/SkyEyeLoc/PFED.git
     
-    cd PFED
+    cd MobileGeo
     ```
 
 2.  **Create environment and install dependencies:**
