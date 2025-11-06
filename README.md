@@ -5,6 +5,8 @@ This is the official PyTorch implementation for our paper **"MobileGeo: Explorin
 
 In this project, We propose **MobileGeo**, a resource-efficient framework combining hierarchical knowledge transfer and multi-view representation refinement. 🚁
 
+<img src="assets/onboard.pdf" width="90%" height="90%">
+
 ---
 
 ## 🌟 Efficiency analysis
