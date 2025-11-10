@@ -39,7 +39,7 @@ We recommend using `conda` to create a virtual environment.
 
 1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/SkyEyeLoc/PFED.git
+    git clone https://github.com/SkyEyeLoc/MobileGeo.git
     
     cd MobileGeo
     ```
