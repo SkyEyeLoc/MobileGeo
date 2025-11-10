@@ -24,7 +24,7 @@ We will update this repository for better clarity ASAP, current version is for q
 
 ## 🏛️ Core Architecture 
 
-The overall architecture of our model `PFED` is illustrated below:
+The overall architecture of our model `MobileGeo` is illustrated below:
 
 
 <img src="assets/frame_work.png" width="90%" height="90%">
